@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Crystal Collectors Game</h1>
+        <p class="lead" id = "directions-text">
+        <h1> Directions</h1>
+        <li>Click a gem to reveal a number</li>
+        <li>Use the gems to make a sum equal to the random number</li>
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h1 id="random-number" ></h1>
+        </div>
+        <div class="col-2" id="wins-losses">
+          <p id = "win-tally"></p>
+          <p id = "loss-tally"></p>
+        </div>
+      </div>
+      <div class ="col-4"></div>
+      <div class="row">
+        <div class="col-6">
+          <h1 header id="user-total"></h1>
+        </div>
+        <div class="col-6"></div>
+      </div>
+      <div class ="row">
+          <div class = "col-8" id="gem-images">
+                  <img src = "assets/images/greengem.png" id = "green-gem"alt = "green gem"width="125" height='125'>
+                  <img src ="assets/images/purplegem.png" id="purple-gem"alt = "purple gem" width="125" height='125'>
+                  <img src = "assets/images/yellowgem.png" id="yellow-gem"alt = "yellow gem" width="125" height='125'>
+                  <img src = "assets/images/redgem.png"id="red-gem" alt = "red gem" width="125" height='125'>
+              </div>
+              <div class="col-4"></div>
+          </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
+  </body>
+</html>
